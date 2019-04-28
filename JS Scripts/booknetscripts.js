@@ -1,5 +1,5 @@
 /*
-This is the javascript code that is run on the Booknet webpage
+This is the Javascript code that is run on the Client side
 All of the functions used by the client are put into this file
 */
 
