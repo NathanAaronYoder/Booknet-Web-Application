@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<title>Booknet</title>
+		<link rel="stylesheet" type="text/css" href="/CSSFiles/booknet.css">
+	</head>
+	<body>
+		<ul>
+		  <li id="HomeButton"><a href="/">Booknet</a></li>
+		  <li style="float:right"><a href="/SignIn">Sign In</a></li>
+		  <li style="float:right"><a href="/Sell">Sell</a></li>
+		  <li style="float:right"><a href="/Shop">Shop</a></li>
+		</ul>
+		<div id="top">
+			<h1>Create Account</h1>
+			<form action="/SignIn" method="post">
+				<input type="text" name="firstname" id="firstname" placeholder="First Name" required>
+				<br><br>
+				<input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
+				<br><br>
+				<input type="text" name="username" id="username" placeholder="Choose a Username" required>
+				<br><br>
+				<input type="password" name="password" id="password" placeholder="Choose a Password" required>
+				<br><br>
+				<input type="password" oninput="validatePasswords()" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password" required>
+				<p id="passwordsmatch"></p>
+				<input type="email" name="email" id="email" placeholder="What is your E-mail?" required>
+				<br><br>
+				<input type="submit" value="Create Account">
+			</form>
+		</div>
+		<div id="bottom">
+		</div>
+		<script type="text/javascript" src="/JSScripts/booknetscripts.js"></script>
+	</body>
+</html>

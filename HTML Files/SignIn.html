@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<title>Booknet</title>
+		<link rel="stylesheet" type="text/css" href="/CSSFiles/booknet.css">
+	</head>
+	<body>
+		<ul>
+		  <li id="HomeButton"><a href="/">Booknet</a></li>
+		  <li style="float:right"><a href="/SignIn">Sign In</a></li>
+		  <li style="float:right"><a href="/Sell">Sell</a></li>
+		  <li style="float:right"><a href="/Shop">Shop</a></li>
+		</ul>
+		<div id="top">
+			<h1>Sign In</h1>
+			<form action="/" onsubmit="createCookie()" method="post">
+				<input type="text" name="username" id="username" placeholder="Username" required>
+				<input type="password" name="password" id="password" placeholder="Password" required>
+				<br><br>
+				<input type="submit" value="Sign In">
+				<br><br>
+				<p>Don't have an account?<br><a href="/CreateAccount">Create Account</a></p>
+			</form>
+		</div>
+		<script type="text/javascript" src="/JSScripts/booknetscripts.js"></script>
+	</body>
+</html>

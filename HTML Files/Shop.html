@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<title>Booknet</title>
+		<link rel="stylesheet" type="text/css" href="/CSSFiles/booknet.css">
+	</head>
+	<body onload="checkSignIn()">
+		<ul>
+		  <li id="HomeButton"><a href="/">Booknet</a></li>
+		  <li style="float:right"><a id="signin" href="/SignIn">Sign In</a></li>
+		  <li style="float:right"><a href="/Sell">Sell</a></li>
+		  <li style="float:right"><a href="/Shop">Shop</a></li>
+		</ul>
+		<div id="top">
+			<h1>Shop</h1>
+			<form action="/Shop/Textbook">
+				<input type="text" name="textbook" id="textbook" placeholder="Textbook" required>
+				<input type="submit" value="Search by Textbook">
+			</form><br>
+			<form name="ISBNForm" action="/Shop/Isbn" onsubmit="return validateISBN()">
+				<input type="text" name="isbn" id="isbn" placeholder="ISBN" required>
+				<input type="submit" value="Search by ISBN">
+			</form>
+		</div>
+		<div id="bottom">
+		</div>
+		<script type="text/javascript" src="/JSScripts/booknetscripts.js"></script>
+	</body>
+</html>

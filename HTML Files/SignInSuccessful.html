@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<title>Booknet</title>
+		<link rel="stylesheet" type="text/css" href="/CSSFiles/booknet.css">
+	</head>
+	<body onload="signedIn()">
+		<ul>
+		  <li id="HomeButton"><a href="/">Booknet</a></li>
+		  <li style="float:right"><a id="signin"></a></li>
+		  <li style="float:right"><a href="/Sell">Sell</a></li>
+		  <li style="float:right"><a href="/Shop">Shop</a></li>
+		</ul>
+		<div id="top">
+			<h1>Booknet</h1>
+			<h2>Marketplace for Used College Textbooks</h2>
+			<form action="/Shop/Textbook">
+				<input type="text" name="textbook" id="textbook" placeholder="Search Textbooks" required>
+				<input type="submit" value="Search">
+			</form>
+		</div>
+		<div id="bottom">
+		</div>
+		<script type="text/javascript" src="/JSScripts/booknetscripts.js"></script>
+	</body>
+</html>

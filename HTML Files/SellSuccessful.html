@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<title>Booknet</title>
+		<link rel="stylesheet" type="text/css" href="/CSSFiles/booknet.css">
+	</head>
+	<body onload="setSeller()">
+		<ul>
+		  <li id="HomeButton"><a href="/">Booknet</a></li>
+		  <li style="float:right"><a id="signin" href="/SignIn">Sign In</a></li>
+		  <li style="float:right"><a href="/Sell">Sell</a></li>
+		  <li style="float:right"><a href="/Shop">Shop</a></li>
+		</ul>
+		<div id="top">
+			<h1>Create Textbook Listing</h1>
+			<form action="/Sell/Textbook" onsubmit="return validateSellForm()">
+				Textbook: <input type="text" name="textbook" id="textbook" placeholder="Textbook" required=""><br><br>
+				Seller: <input type="text" name="seller" id="seller" placeholder="Seller" readonly><br><br>
+				Price: <input type="number" name="price" id="price" placeholder="Price" required><br><br>
+				ISBN: <input type="text" name="isbn" id="isbn" placeholder="ISBN" required><br><br>
+				<input type="submit" value="Create Textbook Listing">
+			</form>
+		</div>
+		<div id="middle">
+			<p>Your textbook has now been listed.</p>
+		</div>
+		<div id="bottom">
+		</div>
+		<script type="text/javascript" src="/JSScripts/booknetscripts.js"></script>
+	</body>
+</html>
