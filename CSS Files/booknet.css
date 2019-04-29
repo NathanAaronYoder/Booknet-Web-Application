@@ -7,13 +7,16 @@ body {
 }
 #top {
   text-align: center;
-  height: 175px;
+  height: 450px;
   padding-top: 100px;
+  padding-bottom: 50px;
 }
 #middle {
+  text-align: center;
   height: 125px;
 }
 #bottom {
+  padding-bottom: 100px;
   height: 125px;
 }
 ul {
@@ -40,6 +43,8 @@ li a:hover {
   background-color: #111;
 }
 table, th, td {
+  margin: auto;
+  background: white;
   border: 1px solid black;
   border-collapse: collapse;
 }
@@ -64,11 +69,23 @@ form {
   border: 1px solid black;
   margin: auto;
 }
+label {
+  padding-bottom: 2px;
+}
 input {
   padding: 6px 10px;
 }
 input[type=text] {
-
+  width: 50%;
+}
+input[type=password] {
+  width: 50%;
+}
+input[type=email] {
+  width: 50%;
+}
+input[type=number] {
+  width: 50%;
 }
 input[type=text]:focus {
   border: 2px solid #155;

@@ -90,7 +90,7 @@ function signIn(){
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("middle").innerHTML = this.responseText;
+      document.getElementById("NoListings").innerHTML = this.responseText;
     }
   };
   xhttp.open("POST", "/Account", true);

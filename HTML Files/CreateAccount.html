@@ -15,17 +15,29 @@
 		<div id="top">
 			<h1>Create Account</h1>
 			<form action="/SignIn" method="post">
-				<input type="text" name="firstname" id="firstname" placeholder="First Name" required>
+				<label>First Name</label>
+				<br>
+				<input type="text" name="firstname" id="firstname" required>
 				<br><br>
-				<input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
+				<label>Last Name</label>
+				<br>
+				<input type="text" name="lastname" id="lastname" required>
 				<br><br>
-				<input type="text" name="username" id="username" placeholder="Choose a Username" required>
+				<label>Username</label>
+				<br>
+				<input type="text" name="username" id="username" required>
 				<br><br>
-				<input type="password" name="password" id="password" placeholder="Choose a Password" required>
+				<label>Password</label>
+				<br>
+				<input type="password" name="password" id="password" required>
 				<br><br>
-				<input type="password" oninput="validatePasswords()" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password" required>
+				<label>Confirm Password</label>
+				<br>
+				<input type="password" oninput="validatePasswords()" name="confirmpassword" id="confirmpassword" required>
 				<p id="passwordsmatch"></p>
-				<input type="email" name="email" id="email" placeholder="What is your E-mail?" required>
+				<label>E-mail</label>
+				<br>
+				<input type="email" name="email" id="email" required>
 				<br><br>
 				<input type="submit" value="Create Account">
 			</form>
